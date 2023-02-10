@@ -1,0 +1,14 @@
+.task-list {
+  list-style-type: none;
+}
+.task-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a171d;
+}
+.text {
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: 700;
+  color: #ffffff;
+}
