@@ -73,7 +73,7 @@ class MyTasks extends Component {
       <div className="app-container">
         <div className="task-container">
           <form className="form" onSubmit={this.onAddTask}>
-            <h1 className="task-heading">Create a task!</h1>
+            <h1 className="heading">Create a task!</h1>
             <label htmlFor="task" className="label">
               Task
             </label>
@@ -115,16 +115,17 @@ class MyTasks extends Component {
               <button
                 type="button"
                 className="button"
-                key={eachTag.optionId}
-                value={eachTag.optionId}
+                key={eachTag.id}
+                value={eachTag.id}
               >
                 {eachTag.displayText}
               </button>
             ))}
           </ul>
+          <h1 className="tasks-heading">Tasks</h1>
           <ul className="tasks-list">
             {tasksList.map(eachTask => (
-              <TaskItem key={eachTask.optionId} TaskDetails={eachTask} />
+              <TaskItem key={eachTask.id} TaskDetails={eachTask} />
             ))}
           </ul>
         </div>

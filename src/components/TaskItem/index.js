@@ -2,12 +2,15 @@ import './index.css'
 
 const TaskItem = props => {
   const {taskDetails} = props
-  const {taskInput} = taskDetails
+  const {task, tag} = taskDetails
 
   return (
     <li className="task-list">
       <div className="task-item">
-        <p className="text">{taskInput}</p>
+        <p className="text">{task}</p>
+        <button type="button" className="button-text">
+          {tag}
+        </button>
       </div>
     </li>
   )
